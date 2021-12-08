@@ -2,9 +2,9 @@
 
 {{ file.Read "templates/snippets/common.sh"}}
 
-if [ -d /var/lib/portmaster/updates ]; then
+if [ -d /opt/safing/portmaster/updates ]; then
     log "Detected previous installation of Portmaster at"
-    log "/var/lib/portmaster"
+    log "/opt/safing/portmaster"
     log "Please uninstall the portmaster package and try again!"
     log "You settings will be migrated automatically during re-installation."
     exit 1
